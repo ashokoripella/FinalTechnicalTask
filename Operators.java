@@ -21,6 +21,12 @@ public class Operators {
 			binaryOperator.setKind(BinaryOperatorKind.OR);
 		}else if (binaryOperator.getKind().equals(BinaryOperatorKind.OR)) {
 			binaryOperator.setKind(BinaryOperatorKind.AND);
-		}	
+		}else if (binaryOperator.getKind().equals(BinaryOperatorKind.BITAND)) {
+			binaryOperator.setKind(BinaryOperatorKind.AND);
+		}else if (binaryOperator.getKind().equals(BinaryOperatorKind.BITOR)) {
+			binaryOperator.setKind(BinaryOperatorKind.OR);
+		}else if (binaryOperator.getKind().equals(BinaryOperatorKind.BITXOR)) {
+			binaryOperator.setKind(BinaryOperatorKind.BITOR);
+		}
 	}
 }
