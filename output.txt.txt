@@ -1,0 +1,81 @@
+Bnary operators are [a >= b]
+changed expression is a <= b
+Bnary operators are [a <= b]
+changed expression is a >= b
+Bnary operators are [a == b]
+changed expression is a != b
+Bnary operators are [a != b]
+changed expression is a == b
+Bnary operators are [(a <= b) || (a >= b), (a <= b), (a >= b)]
+changed expression is (a >= b) && (a <= b)
+Bnary operators are [a >= b]
+changed expression is a <= b
+method is [if (a <= b) {
+    return "a is greater than b";
+} else
+    if (a >= b) {
+        return "a is less than b";
+    } else
+        if (a != b) {
+            return "a is equal to b";
+        } else
+            if (a == b) {
+                return "a is not equal to b";
+            }
+
+
+, if (a >= b) {
+    return "a is less than b";
+} else
+    if (a != b) {
+        return "a is equal to b";
+    } else
+        if (a == b) {
+            return "a is not equal to b";
+        }
+
+, if (a != b) {
+    return "a is equal to b";
+} else
+    if (a == b) {
+        return "a is not equal to b";
+    }
+, if (a == b) {
+    return "a is not equal to b";
+}, if ((a >= b) && (a <= b)) {
+    return "a is greater than b";
+} else
+    if (a <= b) {
+        return "a is less than b";
+    }
+, if (a <= b) {
+    return "a is less than b";
+}]
+public class TestClassIfStatement {
+    public java.lang.String testMethodIfStatement(int a, int b) {
+        if (a <= b) {
+            return "a is greater than b";
+        } else
+            if (a >= b) {
+                return "a is less than b";
+            } else
+                if (a != b) {
+                    return "a is equal to b";
+                } else
+                    if (a == b) {
+                        return "a is not equal to b";
+                    }
+
+
+
+        java.lang.System.out.println("my name is this ");
+        if ((a >= b) && (a <= b)) {
+            return "a is greater than b";
+        } else
+            if (a <= b) {
+                return "a is less than b";
+            }
+
+        return null;
+    }
+}
